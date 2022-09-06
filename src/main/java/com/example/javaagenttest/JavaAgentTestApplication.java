@@ -10,9 +10,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavaAgentTestApplication {
 
 	/**
-	 * 描述：SS
+	 * 描述：
 	 *
-	 * @param args 参数
+	 * @param args jvm参数
 	 * @author 周超
 	 */
 	public static void main(String[] args) {
