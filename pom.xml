@@ -16,6 +16,9 @@
     <url>https://github.com/zhoucha/java-agent-test</url>
     <properties>
         <java.version>1.8</java.version>
+        <charset>UTF-8</charset><!-- utf-8读取文件 -->
+        <encoding>UTF-8</encoding><!-- utf-8进行编码代码 -->
+        <docencoding>UTF-8</docencoding><!-- utf-8进行编码文档 -->
     </properties>
 
     <!--开源协议...-->
@@ -114,19 +117,19 @@
                     </plugin>
 
                     <!--生成API文档插件-->
-                    <!--                    <plugin>-->
-                    <!--                        <groupId>org.apache.maven.plugins</groupId>-->
-                    <!--                        <artifactId>maven-javadoc-plugin</artifactId>-->
-                    <!--                        <version>2.9.1</version>-->
-                    <!--                        <executions>-->
-                    <!--                            <execution>-->
-                    <!--                                <id>attach-javadocs</id>-->
-                    <!--                                <goals>-->
-                    <!--                                    <goal>jar</goal>-->
-                    <!--                                </goals>-->
-                    <!--                            </execution>-->
-                    <!--                        </executions>-->
-                    <!--                    </plugin>-->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.4.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
 
                     <!--gpg插件-->
                     <plugin>
